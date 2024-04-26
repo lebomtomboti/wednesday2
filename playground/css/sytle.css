@@ -1,0 +1,100 @@
+#mainHeading{
+    background-color: bisque;
+    margin: 2rem;
+    border: blue 10px solid;
+   /* border-radius: 10%; */
+    padding: 3ch;
+
+}
+/*.mainHeading{
+    background-color: green !important;
+}*/
+
+ul{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+ul li{
+    list-style: none;
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+}
+/* child selector */
+aside > p{
+    border: 3px solid coral;
+}
+/* adjacent selector */
+aside +p{
+    font-weight: 900;
+    font-size: 5ch;
+    width: 600px;
+    text-transform: uppercase;
+    background-image: url('https://matthew-dean-brown.github.io/hostedImages/images/cat2.avif');
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+}
+
+/* general sibling selector */
+p ~ table {
+    border: 1ch palevioletred solid;
+}
+
+div p {
+    background-color: brown;
+    color: whitesmoke;
+    font-size: 50px;
+    width: 300px;
+    height: 300px;
+    align-content: center;
+    border-radius: 10%;
+    transition: transform 3s;
+}
+
+div p:hover{
+    transform: rotateX(360deg);
+    border-radius: 50%;
+}
+
+img{
+    width: 3oopx;
+    height: 300px;
+    border-radius: 10%;
+    object-fit: cover;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+}
+
+.front,.back{
+    width: 300px;
+    height: 300px;
+    box-shadow: 10px 10px 4px 2px rgba(235, 117, 217, 0.59);
+    border-radius: 2rem;
+    position: absolute;
+    color: white;
+    backface-visibility: hidden;
+
+}
+.card{
+    position: relative;
+    transition: transform linear 1s;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+}
+.container article:hover>.card{
+    transform: rotateY(180deg) rotateZ(180deg);
+    cursor: pointer;
+}
+.container article{
+    perspective: 1000px;
+}
+.back{
+    transform: rotateY(180deg) rotateZ(180deg);
+    background-color: black;
+}

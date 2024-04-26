@@ -1,0 +1,76 @@
+table {
+    border: 2px solid burlywood;
+    margin: auto;
+    text-align: center;
+}
+header h2 {
+    color: black;
+}
+.nav a {
+    text-decoration: none;
+    padding: 1rem;
+    color: aliceblue;
+}
+.nav {
+    background-color: black;
+    text-align: center;
+}
+#main {
+    margin: 30px;
+    text-align: center;
+}
+aside {
+    border: 10px dotted dimgrey;
+}
+aside + button {
+    color: cornflowerblue;
+}
+p ~ article {
+    
+}
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 800;  
+}
+#parent h3 {
+    display: none;
+}
+#parent:hover h3 {
+    display: block;
+    background-color: yellow;
+    padding: 2rex;
+}
+a:active {
+    color: purple;
+}
+tr td:first-child {
+    background-color: yellowgreen;
+}
+tr td:first-child {
+    color: crimson;
+}
+tr td:first-child:hover {
+    color: crimson;
+}
+p i:first-of-type {
+    color: blue;
+}
+ i:first-of-type {
+    color: peru;
+}
+::selection {
+    background-color: greenyellow;
+    color: greenyellow;
+}
+aside + .paragraph {
+    text-decoration: red;
+}
+aside + .paragraph {
+    text-decoration: blue;
+}
+
+
+
+
+
+
