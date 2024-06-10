@@ -19,10 +19,13 @@ ul {
     text-decoration: none;
   }
   
-  li a:hover:not(.active) {
+  li a:hover {
     background-color: #111;
   }
-  
-  .active {
-    background-color: #04AA6D;
-  }
+ img{
+    width: 1500px;
+    height: 650px;
+    object-fit: cover;
+ }
+
+ 
