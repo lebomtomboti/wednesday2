@@ -31,11 +31,11 @@ ul {
   width: 18rem;
   
 }
-main{
+/*main{
   margin-top: 5%;
   display: grid;
   grid-template-columns: repeat(3,1fr);
-}
+}*/
 body{
   background-color: #45A29E;
 }
